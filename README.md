@@ -12,3 +12,4 @@ All the solutions for all the assignments for each week as per 2026
   - If you see the assignment.sbt file and the build.sbt, you are in the correct directory. If you don't see these files, you are in the wrong directory and change it to the correct directory.
   - Once you are in the correct directory, type sbt in the terminal. Wait for it to compile.
   - Once the compilation is done and no errors pop up, follow the submission instructions given by Coursera to submit your assignment.
+  - If you are getting any errors, upload the whole zip file to any AI along with the error screenshot and ask it to solve the problem for you.
