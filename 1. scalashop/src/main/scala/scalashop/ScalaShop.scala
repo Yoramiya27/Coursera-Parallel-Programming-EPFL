@@ -58,9 +58,11 @@ object ScalaShop:
     infoBox.setBorder(BorderFactory.createLoweredBevelBorder())
     sidePanel.add(infoBox, BorderLayout.SOUTH)
 
-    private val menuBar = JMenuBar()
+    // FIX: Explicitly typed as JMenuBar to stop java.awt.MenuBar interference
+    private val menuBar: JMenuBar = JMenuBar()
 
-    private val fileMenu = JMenu("File")
+    // FIX: Explicitly typed as JMenu to stop java.awt.Menu interference
+    private val fileMenu: JMenu = JMenu("File")
     val openItem = JMenuItem("Open...")
     openItem.addActionListener((_: ActionEvent) =>
       val chooser = JFileChooser()
@@ -74,7 +76,8 @@ object ScalaShop:
     fileMenu.add(openItem)
     fileMenu.add(exitItem)
 
-    private val helpMenu = JMenu("Help")
+    // FIX: Explicitly typed as JMenu to stop java.awt.Menu interference
+    private val helpMenu: JMenu = JMenu("Help")
     val aboutItem = JMenuItem("About")
     aboutItem.addActionListener((_: ActionEvent) =>
       JOptionPane.showMessageDialog(
